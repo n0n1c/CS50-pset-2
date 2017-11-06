@@ -13,10 +13,10 @@ int main(int argc, string argv[])
         }
     string num = argv[1];
     int key = atoi(num);
-    string phrase = GetString();
+    string phrase = get_string();
     for (int i = 0, lengthp = strlen(phrase);i < lengthp;i++)
     {
-        
+
         if ( islower(phrase[i]))
         {
         int letter = phrase[i] - 97;
@@ -27,7 +27,7 @@ int main(int argc, string argv[])
         {
         int letter = phrase[i] - 65;
         int cryptletter = (letter + key)%26 + 65;
-        printf("%c", (char)cryptletter); 
+        printf("%c", (char)cryptletter);
         }
         else
         {
